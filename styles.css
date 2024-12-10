@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background: #000000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #2acd92;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: #000000;
+}
+
+.profile-image {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5%;
+    border: 1px solid transparent;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    margin-bottom: 20px;
+}
+
+.profile-image:hover {
+    box-shadow: 0 0 20px 10px rgba(23, 36, 88, 0.8),
+                0 0 30px 15px rgba(0, 0, 255, 0.8); 
+    transform: scale(1.05); 
+}
+
+.text-content {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 20px;
+}
+
+.text-content h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.text-content p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #555;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+/* About Section */
+#about h1, #services h1, #skills h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Services and Skills Containers */
+.service-container, .skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service, .skill {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.service h3, .skill h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.service p, .skill p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #050505;
+    color: #fff;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+.media {
+    display: flex;             
+    justify-content: center;     
+    align-items: center;         
+    height: 100px;              
+    background-color: #000000;  
+}
+.social-links,.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+  }
+  
+  .social-btn svg {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  .social-btn:hover {
+    width: 200px;
+    border-radius: 5px;
+  }
+  
+  .social-btn:hover span {
+    padding: 2px;
+    width: 120px;
+  }
+  
+  #linkedin svg {
+    fill: #0e76a8;
+  }
+  #github {
+    fill: #333;
+  }
+  .animated-text {
+    font-size: 44px;
+    font-weight: 600;
+    min-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3s steps(15, end) infinite, cursor 0.7s step-end infinite; 
+}
+
+.animated-text span {
+    display: inline-block;
+    animation: change-words 6s infinite;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes change-words {
+    0%, 50% {
+        content: "Developer";
+    }
+    51%, 100% {
+        content: "Designer";
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.animated-text span::after {
+    color: orangered;
+    content: "Developer"; /* Default text */
+    animation: change-words 6s infinite;
+}
+
+.service-container, .skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service, .skill {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.service h3, .skill h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.service p, .skill p {
+    color: #ffffff;
+    font-size: 1rem;
+}
